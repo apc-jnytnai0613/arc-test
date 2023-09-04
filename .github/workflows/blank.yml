@@ -6,7 +6,9 @@ jobs:
       runs-on: arc-runner-set
       steps:
         - name: Hello world
-          run: echo "Hello"
+          run: |
+            echo "Hello"
+            sleep 30
   test2:
     runs-on: arc-runner-set
     steps:
