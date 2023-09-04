@@ -16,4 +16,3 @@ jobs:
         run: echo "World"
       - name: test container
         uses: docker://nginx
-        run: echo test
