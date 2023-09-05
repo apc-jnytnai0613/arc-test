@@ -7,6 +7,10 @@ jobs:
       steps:
         - name: step1
           run: echo "step1"
+        - name: docker
+          uses: dokcer://amazon/aws-cli@latest
+          with: 
+            args: --version
   test2:
     runs-on: arc-runner-set
     steps:
