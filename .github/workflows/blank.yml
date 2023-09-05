@@ -12,23 +12,3 @@ jobs:
     steps:
       - name: step2
         run: echo "step2"
-  test3:
-    runs-on: arc-runner-set
-    steps:
-      - name: step3
-        run: echo "step3"
-  test4:
-    runs-on: arc-runner-set
-    steps:
-      - name: step4
-        run: echo "step4"
-  test5:
-    runs-on: arc-runner-set
-    steps:
-      - name: step5
-        run: echo "step5"
-  test6:
-    runs-on: arc-runner-set
-    steps:
-      - name: step6
-        run: echo "step6"
