@@ -10,7 +10,7 @@ jobs:
             id
             echo "step1"
         - name: docker
-          uses: docker://nginx:latest
+          uses: docker://ubuntu:latest
   test2:
     runs-on: arc-runner-set
     steps:
