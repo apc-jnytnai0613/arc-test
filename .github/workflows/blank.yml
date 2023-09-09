@@ -3,16 +3,19 @@ on:
   workflow_dispatch:
 jobs:
   test1:
-      runs-on: arc-runner-set
-      container:
-          image: ubuntu
-      steps:
-        - name: step1
-          run: | 
-            id
-            echo "step1"
+    runs-on: arc-runner-set
+    steps:
+      - name: step1
+        run: | 
+          id
+          echo "step1"
   test2:
     runs-on: arc-runner-set
     steps:
       - name: step2
         run: echo "step2"
+  
+  test3:
+    runs-on: arc-runner-set
+    steps:
+      - uses: docker://ubuntu:latest
