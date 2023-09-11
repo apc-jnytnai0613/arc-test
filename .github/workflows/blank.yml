@@ -19,3 +19,5 @@ jobs:
     runs-on: arc-runner-set
     steps:
       - uses: docker://ubuntu:latest
+        with:
+          args: echo test
