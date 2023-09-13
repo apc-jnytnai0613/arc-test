@@ -5,6 +5,8 @@ jobs:
   test:
     runs-on: arc-runner-set
     steps:
-      - uses: docker://ubuntu:latest
-        with:
-          args: echo test
+      #- uses: docker://ubuntu:latest
+      #  with:
+      #    args: echo test
+      - name: test
+        run: echo test && sleep 60
