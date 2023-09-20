@@ -5,6 +5,5 @@ jobs:
   test:
     runs-on: arc-runner-set
     steps:
-      - uses: docker://amazon/aws-cli:latest
-        with:
-          args: --version
+      - name: test1
+        run: echo test
