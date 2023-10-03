@@ -1,6 +1,7 @@
 name: Test workflow111
 on:
   workflow_dispatch:
+  workflow_call:
 jobs:
   test1:
       runs-on: arc-runner-set
