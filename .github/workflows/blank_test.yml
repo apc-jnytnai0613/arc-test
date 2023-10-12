@@ -7,7 +7,7 @@ jobs:
    runs-on: arc-runner-set
    steps:
    - name: Run Trivy vulnerability scanner with exclusions
-     uses: docker://aquasecurity/trivy-action@0.12.0
+     uses: docker://aquasecurity/trivy-action@master
      with:
        args: |
          image-ref: nginx
