@@ -1,18 +1,11 @@
-name: Test workflow111
+name: Test workflow
 on:
   workflow_dispatch:
-  workflow_call:
 jobs:
   test1:
-   runs-on: arc-runner-set
-   steps:
-   - name: Run Trivy vulnerability scanner with exclusions
-     uses: docker://aquasecurity/trivy-action@master
-     with:
-       args: |
-         image-ref: nginx
-         format: 'table'
-         exit-code: '1'
-         ignore-unfixed: true
-         severity: 'CRITICAL,HIGH'
-         timeout: 15m
+      runs-on: arc-runner-set
+      container:
+          image: ubuntu
+      steps:
+        - name: step1
+          run: sleep 30
