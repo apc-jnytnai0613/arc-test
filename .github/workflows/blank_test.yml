@@ -8,4 +8,4 @@ jobs:
         - name: step1
           uses: docker://amazon/aws-cli:latest
           with:
-            args: version
+            args: --version
