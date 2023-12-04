@@ -6,4 +6,6 @@ jobs:
     runs-on: arc-runner-set
     steps:
       - name: test1
-        run: sleep 180
+        uses: docker://amazon/aws-cli
+        with:
+          args: version
