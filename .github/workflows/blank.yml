@@ -4,8 +4,8 @@ on:
 jobs:
   test:
     runs-on: arc-runner-set
+    container:
+      image: ubuntu:latest
     steps:
       - name: test1
-        uses: docker://amazon/aws-cli
-        with:
-          args: version
+        run: sleep 60
