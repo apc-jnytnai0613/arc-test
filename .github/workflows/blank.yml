@@ -1,16 +1,15 @@
 name: Test workflow
 on:
   workflow_dispatch:
+runs-on: arc-runner-set2
 jobs:
   test:
-    runs-on: arc-runner-set
     container:
       image: ubuntu:latest
     steps:
       - name: test1
         run: sleep 10
   test2:
-    runs-on: arc-runner-set2
     container:
       image: ubuntu:latest
     steps:
